@@ -1,17 +1,14 @@
+// Libraries Imports
 import type { Metadata } from "next";
-import { Poppins, Space_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
+// Local Imports
 import "./globals.css";
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["400", "700"],
-});
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body className={`${spaceGrotesk.variable} antialiased`}>
+        {children}
+        <Toaster position="top-right" />
+      </body>
     </html>
   );
 }
