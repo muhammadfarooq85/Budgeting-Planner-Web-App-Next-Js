@@ -4,6 +4,7 @@ import {
   Calendar,
   ClipboardMinus,
   DollarSign,
+  LayoutDashboard,
   ReceiptText,
 } from "lucide-react";
 import { NavMain } from "@/components/nav-main";
@@ -17,8 +18,13 @@ import { Separator } from "@/components/ui/separator";
 const data = {
   navMain: [
     {
+      title: "Dashboard",
+      url: "/dashboard",
+      icon: LayoutDashboard,
+    },
+    {
       title: "Transactions",
-      url: "#",
+      url: "/dashboard/transactions",
       icon: DollarSign,
     },
     {

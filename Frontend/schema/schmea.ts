@@ -1,6 +1,6 @@
-import { object, string } from "yup";
+import { object, string, number, date } from "yup";
 
-const authScehma = object({
+const authSchema = object({
   email: string()
     .email("Invalid email address.")
     .required("Email is required."),
@@ -13,5 +13,16 @@ const authScehma = object({
     })
     .required("Password is required."),
 });
+const incomeExpenseSchema = object({
+  account: string().required("Account is required."),
+  counterparty: string().required("Counterparty is required."),
+  tag: string()
+    .oneOf(["stock", "supplier", "investment"], "Invalid tag")
+    .required("Tag is required."),
+  amount: number()
+    .required("Amount is required.")
+    .positive("Amount must be positive."),
+  date: date().required("Date is required."),
+});
 
-export { authScehma };
+export { authSchema, incomeExpenseSchema };

@@ -3,7 +3,7 @@ import { Badge } from "./ui/badge";
 
 export function SectionCards() {
   return (
-    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:shadow-xs lg:px-6 xl:grid-cols-2">
       <Card className="@container/card !bg-[#fbfcf7]">
         <CardHeader>
           <CardTitle className="text-xl sm:text-2xl">My accounts</CardTitle>
@@ -38,7 +38,7 @@ export function SectionCards() {
             <p className="text-xl font-normal">14/11/23</p>
             <p className="text-xl text-green-600">+$23.826</p>
             <p className="text-xl">Al Falah</p>
-            <Badge>Al Falah</Badge>
+            <Badge>Subscription</Badge>
           </div>
           <div className="flex justify-between !w-full">
             <p className="text-xl font-normal">14/11/23</p>

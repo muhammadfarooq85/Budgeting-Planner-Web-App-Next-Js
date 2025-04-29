@@ -6,35 +6,39 @@ import { toast } from "sonner";
 // Local Imports
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { authScehma } from "@/schema/schmea";
+import { authSchema } from "@/schema/schmea";
 import { FileSearch } from "lucide-react";
+import { Label } from "@/components/ui/label";
 
 const Home = () => {
   const [isSignUp, setIsSignUp] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { handleSubmit, handleReset, values, errors, touched, handleChange } =
-    useFormik({
-      onSubmit: (values: { email: string; password: string }) => {
-        if (isSignUp) {
-          setIsSubmitting(true);
-          console.log(values);
-          toast("Signup successfully.");
-          handleReset(values);
-          setIsSubmitting(false);
-        } else {
-          setIsSubmitting(true);
-          console.log(values);
-          toast("Signin successfully.");
-          handleReset(values);
-          setIsSubmitting(false);
-        }
-      },
-      initialValues: {
-        email: "",
-        password: "",
-      },
-      validationSchema: authScehma,
-    });
+  const {
+    handleSubmit,
+    handleReset,
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleBlur,
+    isSubmitting,
+  } = useFormik({
+    onSubmit: (values: { email: string; password: string }) => {
+      if (isSignUp) {
+        console.log(values);
+        toast("Signup successfully.");
+        handleReset(values);
+      } else {
+        console.log(values);
+        toast("Signin successfully.");
+        handleReset(values);
+      }
+    },
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: authSchema,
+  });
 
   return (
     <div className="flex min-h-screen">
@@ -59,37 +63,39 @@ const Home = () => {
         <h2 className="text-2xl sm:text-4xl font-bold mb-8">
           {isSignUp ? "Create an Account" : "Welcome Back"}
         </h2>
-        <form className="w-full max-w-md space-y-6" onSubmit={handleSubmit}>
+        <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name" className="text-xl font-bold">
+            <Label htmlFor="name" className="text-xl font-bold">
               Email:
-            </label>
+            </Label>
             <Input
               name="email"
               type="email"
               placeholder="Email"
               className="w-full mt-2 px-4 py-6 border rounded"
               value={values?.email}
+              onBlur={handleBlur}
               onChange={handleChange}
             />
             {errors && touched.email ? (
-              <p className="text-red-900 text-md">{errors?.email}</p>
+              <p className="text-red-500 text-md">{errors?.email}</p>
             ) : null}
           </div>
           <div>
-            <label htmlFor="password" className="text-xl font-bold">
+            <Label htmlFor="password" className="text-xl font-bold">
               Password:
-            </label>
+            </Label>
             <Input
               name="password"
               type="password"
               placeholder="Password"
               className="w-full mt-2 px-4 py-6 border rounded"
               value={values?.password}
+              onBlur={handleBlur}
               onChange={handleChange}
             />
             {errors && touched.password ? (
-              <p className="text-red-900 text-md">{errors?.password}</p>
+              <p className="text-red-500 text-md">{errors?.password}</p>
             ) : null}
           </div>
           <Button

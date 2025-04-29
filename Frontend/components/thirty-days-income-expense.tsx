@@ -139,8 +139,12 @@ export function ThirtyDaysIncomeExpenseChart() {
     <Card className="!bg-[#fbfcf7]">
       <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
         <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
-          <CardTitle>Income - Expense</CardTitle>
-          <CardDescription>Last 30 Days</CardDescription>
+          <CardTitle className="text-xl sm:text-2xl">
+            Income - Expense
+          </CardTitle>
+          <CardDescription className="text-md sm:text-lg">
+            Last 30 Days
+          </CardDescription>
         </div>
         <div className="flex">
           {["income", "expense"].map((key) => {
