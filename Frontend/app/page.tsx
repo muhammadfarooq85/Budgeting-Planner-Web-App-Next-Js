@@ -1,4 +1,5 @@
 "use client";
+// Libraries Imports
 import { useState } from "react";
 import { useFormik } from "formik";
 import Image from "next/image";
@@ -6,9 +7,10 @@ import { toast } from "sonner";
 // Local Imports
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { authSchema } from "@/schema/schmea";
+import { authSchema } from "@/schema/schema";
 import { FileSearch } from "lucide-react";
 import { Label } from "@/components/ui/label";
+import { authFormTypes } from "@/types/types";
 
 const Home = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -21,7 +23,7 @@ const Home = () => {
     handleChange,
     handleBlur,
     isSubmitting,
-  } = useFormik({
+  } = useFormik<authFormTypes>({
     onSubmit: (values: { email: string; password: string }) => {
       if (isSignUp) {
         console.log(values);
@@ -65,42 +67,51 @@ const Home = () => {
         </h2>
         <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
           <div>
-            <Label htmlFor="name" className="text-xl font-bold">
+            <Label htmlFor="name" className="!text-lg mb-1 font-semibold">
               Email:
             </Label>
             <Input
+              id="email"
               name="email"
               type="email"
-              placeholder="Email"
-              className="w-full mt-2 px-4 py-6 border rounded"
+              aria-label="Email"
+              placeholder="john@gmail.com"
+              className="w-full px-4 py-6 border rounded"
               value={values?.email}
               onBlur={handleBlur}
               onChange={handleChange}
+              required
             />
             {errors && touched.email ? (
               <p className="text-red-500 text-md">{errors?.email}</p>
             ) : null}
           </div>
           <div>
-            <Label htmlFor="password" className="text-xl font-bold">
+            <Label htmlFor="password" className="!text-lg mb-1 font-semibold">
               Password:
             </Label>
             <Input
+              id="password"
               name="password"
               type="password"
-              placeholder="Password"
-              className="w-full mt-2 px-4 py-6 border rounded"
+              aria-label="Password"
+              placeholder=" ******* "
+              className="w-full px-4 py-6 border rounded"
               value={values?.password}
               onBlur={handleBlur}
               onChange={handleChange}
+              required
             />
             {errors && touched.password ? (
               <p className="text-red-500 text-md">{errors?.password}</p>
             ) : null}
           </div>
           <Button
+            id="submit"
+            name="save"
             type="submit"
-            className="cursor-pointer w-full !bg-[#d7e6c5] !text-black text-xl font-bold py-6 rounded"
+            aria-label={isSignUp ? "Signup" : "Signin"}
+            className="cursor-pointer !w-full !bg-[#d7e6c5] !text-black !text-xl !font-bold py-6"
             disabled={isSubmitting}
           >
             {isSubmitting ? " ... " : isSignUp ? "Signup" : "Signin"}

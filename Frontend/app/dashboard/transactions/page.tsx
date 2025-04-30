@@ -1,14 +1,10 @@
 // Libraries Imports
-import { DataTable } from "@/components/data-table";
+import { TransactionsDataTable } from "@/components/transactions-data-table";
 // Local Imports
 import data from "./data.json";
 
 function Transactions() {
-  return (
-    <div>
-      <DataTable data={data} />
-    </div>
-  );
+  return <TransactionsDataTable data={data} />;
 }
 
 export default Transactions;

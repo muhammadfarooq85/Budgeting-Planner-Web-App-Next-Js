@@ -29,7 +29,7 @@ const data = {
     },
     {
       title: "Invoices",
-      url: "#",
+      url: "/dashboard/invoices",
       icon: ReceiptText,
     },
     {

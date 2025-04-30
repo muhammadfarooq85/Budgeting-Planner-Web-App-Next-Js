@@ -1,242 +1,252 @@
 [
   {
-    "id": 1,
-    "date": "28-04-2025",
-    "amount": 85000,
-    "account": "bank account",
-    "counterparty": "Al-Faisal Traders",
-    "tag": "supplier"
+    "_id": "662fb7b3e7a6c5e001a1a005",
+    "transactionNumber": "05",
+    "amount": 35000,
+    "type": "expense",
+    "description": "Utility bill payment",
+    "userId": "101",
+    "purposeOfTransaction": "Electricity Bill",
+    "issueDate": "2025-04-23T10:00:00Z",
+    "updatedAt": "2025-04-23T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "111122223333",
+      "email": "owner@yourbiz.com",
+      "bankName": "HBL",
+      "address": "123, Lahore"
+    },
+    "receiverDetails": {
+      "name": "LESCO",
+      "accountNumber": "9988112233",
+      "email": "billing@lesco.com",
+      "bankName": "NBP",
+      "address": "123, Lahore"
+    }
   },
   {
-    "id": 2,
-    "date": "27-04-2025",
-    "amount": 500000,
-    "account": "vault",
-    "counterparty": "Meezan Securities",
-    "tag": "investment"
-  },
-  {
-    "id": 3,
-    "date": "25-04-2025",
-    "amount": 12000,
-    "account": "cash",
-    "counterparty": "Ahmed & Sons",
-    "tag": "stock"
-  },
-  {
-    "id": 4,
-    "date": "24-04-2025",
-    "amount": 150000,
-    "account": "bank account",
-    "counterparty": "ABC Textiles",
-    "tag": "supplier"
-  },
-  {
-    "id": 5,
-    "date": "22-04-2025",
-    "amount": 75000,
-    "account": "vault",
-    "counterparty": "Standard Investments",
-    "tag": "investment"
-  },
-  {
-    "id": 6,
-    "date": "20-04-2025",
-    "amount": 9500,
-    "account": "cash",
-    "counterparty": "Khan Hardware",
-    "tag": "stock"
-  },
-  {
-    "id": 7,
-    "date": "19-03-2025",
-    "amount": 33000,
-    "account": "bank account",
-    "counterparty": "Bahria Traders",
-    "tag": "supplier"
-  },
-  {
-    "id": 8,
-    "date": "11-02-2025",
-    "amount": 422000,
-    "account": "vault",
-    "counterparty": "Rafiq & Co",
-    "tag": "investment"
-  },
-  {
-    "id": 9,
-    "date": "30-01-2025",
-    "amount": 16000,
-    "account": "cash",
-    "counterparty": "City Mart Pvt Ltd",
-    "tag": "stock"
-  },
-  {
-    "id": 10,
-    "date": "28-12-2024",
+    "_id": "662fb7b3e7a6c5e001a1a006",
+    "transactionNumber": "06",
     "amount": 120000,
-    "account": "bank account",
-    "counterparty": "Hussain Textiles",
-    "tag": "supplier"
+    "type": "income",
+    "description": "Monthly sales revenue",
+    "userId": "201",
+    "purposeOfTransaction": "Sales",
+    "issueDate": "2025-04-22T10:00:00Z",
+    "updatedAt": "2025-04-22T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "222233334444",
+      "email": "owner@yourbiz.com",
+      "bankName": "UBL",
+      "address": "123, Karachi"
+    },
+    "receiverDetails": {
+      "name": "XYZ Supermarket",
+      "accountNumber": "1122443355",
+      "email": "finance@xyzsupermarket.com",
+      "bankName": "Faysal Bank",
+      "address": "456, Hyderabad"
+    }
   },
   {
-    "id": 11,
-    "date": "15-11-2024",
-    "amount": 78000,
-    "account": "vault",
-    "counterparty": "Pak Agro Supplies",
-    "tag": "stock"
+    "_id": "662fb7b3e7a6c5e001a1a007",
+    "transactionNumber": "07",
+    "amount": 15000,
+    "type": "expense",
+    "description": "Fuel and maintenance costs",
+    "userId": "101",
+    "purposeOfTransaction": "Vehicle Expense",
+    "issueDate": "2025-04-21T10:00:00Z",
+    "updatedAt": "2025-04-21T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "555566667777",
+      "email": "owner@yourbiz.com",
+      "bankName": "HBL",
+      "address": "123, Multan"
+    },
+    "receiverDetails": {
+      "name": "Shell Pakistan",
+      "accountNumber": "7788990011",
+      "email": "billing@shell.com.pk",
+      "bankName": "SCB",
+      "address": "789, Faisalabad"
+    }
   },
   {
-    "id": 12,
-    "date": "12-11-2024",
-    "amount": 230000,
-    "account": "cash",
-    "counterparty": "Meezan Securities",
-    "tag": "investment"
+    "_id": "662fb7b3e7a6c5e001a1a008",
+    "transactionNumber": "08",
+    "amount": 220000,
+    "type": "income",
+    "description": "Project payment received",
+    "userId": "201",
+    "purposeOfTransaction": "Freelance Project",
+    "issueDate": "2025-04-20T10:00:00Z",
+    "updatedAt": "2025-04-20T10:00:00Z",
+    "senderDetails": {
+      "name": "ChatGPT AI",
+      "accountNumber": "AI12345678",
+      "email": "assistant@openai.com",
+      "bankName": "FutureTech Bank",
+      "address": "1 Cloud Lane"
+    },
+    "receiverDetails": {
+      "name": "Client X",
+      "accountNumber": "9988221155",
+      "email": "clientx@projects.com",
+      "bankName": "HBL",
+      "address": "123, Islamabad"
+    }
   },
   {
-    "id": 13,
-    "date": "01-11-2024",
-    "amount": 34000,
-    "account": "bank account",
-    "counterparty": "Ahmed & Sons",
-    "tag": "supplier"
+    "_id": "662fb7b3e7a6c5e001a1a009",
+    "transactionNumber": "09",
+    "amount": 40000,
+    "type": "expense",
+    "description": "Software subscription fee",
+    "userId": "201",
+    "purposeOfTransaction": "IT Tools",
+    "issueDate": "2025-04-19T10:00:00Z",
+    "updatedAt": "2025-04-19T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "999900001111",
+      "email": "owner@yourbiz.com",
+      "bankName": "UBL",
+      "address": "123, Peshawar"
+    },
+    "receiverDetails": {
+      "name": "Adobe Systems",
+      "accountNumber": "5566778899",
+      "email": "billing@adobe.com",
+      "bankName": "Bank Alfalah",
+      "address": "Silicon Valley, USA"
+    }
   },
   {
-    "id": 14,
-    "date": "25-10-2024",
-    "amount": 19000,
-    "account": "vault",
-    "counterparty": "Khan Hardware",
-    "tag": "stock"
+    "_id": "662fb7b3e7a6c5e001a1a010",
+    "transactionNumber": "010",
+    "amount": 67000,
+    "type": "expense",
+    "description": "Printing and packaging materials",
+    "userId": "101",
+    "purposeOfTransaction": "Business Supplies",
+    "issueDate": "2025-04-18T10:00:00Z",
+    "updatedAt": "2025-04-18T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "888899990000",
+      "email": "owner@yourbiz.com",
+      "bankName": "Meezan Bank",
+      "address": "123, Bahawalpur"
+    },
+    "receiverDetails": {
+      "name": "PrintZone",
+      "accountNumber": "6677889900",
+      "email": "sales@printzone.pk",
+      "bankName": "Bank Alfalah",
+      "address": "123, Lahore"
+    }
   },
   {
-    "id": 15,
-    "date": "14-10-2024",
-    "amount": 98000,
-    "account": "cash",
-    "counterparty": "Al-Faisal Traders",
-    "tag": "supplier"
+    "_id": "662fb7b3e7a6c5e001a1a011",
+    "transactionNumber": "111",
+    "amount": 95000,
+    "type": "income",
+    "description": "Received final payment for project Alpha",
+    "userId": "201",
+    "purposeOfTransaction": "Project Alpha Final Installment",
+    "issueDate": "2025-04-17T10:00:00Z",
+    "updatedAt": "2025-04-17T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "111122223333",
+      "email": "owner@yourbiz.com",
+      "bankName": "HBL",
+      "address": "123, Quetta"
+    },
+    "receiverDetails": {
+      "name": "Project Alpha Client",
+      "accountNumber": "222211110000",
+      "email": "client@projectalpha.com",
+      "bankName": "UBL",
+      "address": "789, Rawalpindi"
+    }
   },
   {
-    "id": 16,
-    "date": "10-09-2024",
-    "amount": 460000,
-    "account": "bank account",
-    "counterparty": "Standard Investments",
-    "tag": "investment"
+    "_id": "662fb7b3e7a6c5e001a1a012",
+    "transactionNumber": "112",
+    "amount": 33000,
+    "type": "expense",
+    "description": "Employee salary transfer",
+    "userId": "101",
+    "purposeOfTransaction": "Payroll",
+    "issueDate": "2025-04-16T10:00:00Z",
+    "updatedAt": "2025-04-16T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "333344445555",
+      "email": "owner@yourbiz.com",
+      "bankName": "UBL",
+      "address": "123, Sukkur"
+    },
+    "receiverDetails": {
+      "name": "Imran Ali",
+      "accountNumber": "9988001122",
+      "email": "imran.ali@company.com",
+      "bankName": "Meezan Bank",
+      "address": "456, Larkana"
+    }
   },
   {
-    "id": 17,
-    "date": "01-09-2024",
-    "amount": 24000,
-    "account": "vault",
-    "counterparty": "City Mart Pvt Ltd",
-    "tag": "stock"
+    "_id": "662fb7b3e7a6c5e001a1a013",
+    "transactionNumber": "113",
+    "amount": 45000,
+    "type": "expense",
+    "description": "Office rent for April",
+    "userId": "101",
+    "purposeOfTransaction": "Rent",
+    "issueDate": "2025-04-15T10:00:00Z",
+    "updatedAt": "2025-04-15T10:00:00Z",
+    "senderDetails": {
+      "name": "Business Owner",
+      "accountNumber": "121212121212",
+      "email": "owner@yourbiz.com",
+      "bankName": "HBL",
+      "address": "123, Sialkot"
+    },
+    "receiverDetails": {
+      "name": "Office Landlord",
+      "accountNumber": "454545454545",
+      "email": "landlord@rentals.com",
+      "bankName": "Askari Bank",
+      "address": "123, Gujrat"
+    }
   },
   {
-    "id": 18,
-    "date": "22-08-2024",
-    "amount": 30000,
-    "account": "cash",
-    "counterparty": "ABC Textiles",
-    "tag": "supplier"
-  },
-  {
-    "id": 19,
-    "date": "15-08-2024",
-    "amount": 129000,
-    "account": "bank account",
-    "counterparty": "Rafiq & Co",
-    "tag": "investment"
-  },
-  {
-    "id": 20,
-    "date": "10-07-2024",
-    "amount": 83000,
-    "account": "vault",
-    "counterparty": "Bahria Traders",
-    "tag": "stock"
-  },
-  {
-    "id": 21,
-    "date": "01-07-2024",
-    "amount": 157000,
-    "account": "cash",
-    "counterparty": "Pak Agro Supplies",
-    "tag": "supplier"
-  },
-  {
-    "id": 22,
-    "date": "22-06-2024",
-    "amount": 340000,
-    "account": "bank account",
-    "counterparty": "Hussain Textiles",
-    "tag": "investment"
-  },
-  {
-    "id": 23,
-    "date": "10-06-2024",
-    "amount": 10900,
-    "account": "vault",
-    "counterparty": "Khan Hardware",
-    "tag": "stock"
-  },
-  {
-    "id": 24,
-    "date": "02-06-2024",
-    "amount": 62000,
-    "account": "cash",
-    "counterparty": "Ahmed & Sons",
-    "tag": "supplier"
-  },
-  {
-    "id": 25,
-    "date": "25-05-2024",
-    "amount": 285000,
-    "account": "bank account",
-    "counterparty": "Meezan Securities",
-    "tag": "investment"
-  },
-  {
-    "id": 26,
-    "date": "15-05-2024",
-    "amount": 18000,
-    "account": "vault",
-    "counterparty": "City Mart Pvt Ltd",
-    "tag": "stock"
-  },
-  {
-    "id": 27,
-    "date": "04-05-2024",
-    "amount": 99000,
-    "account": "cash",
-    "counterparty": "ABC Textiles",
-    "tag": "supplier"
-  },
-  {
-    "id": 28,
-    "date": "25-04-2024",
-    "amount": 390000,
-    "account": "bank account",
-    "counterparty": "Standard Investments",
-    "tag": "investment"
-  },
-  {
-    "id": 29,
-    "date": "15-04-2024",
-    "amount": 15800,
-    "account": "vault",
-    "counterparty": "Bahria Traders",
-    "tag": "stock"
-  },
-  {
-    "id": 30,
-    "date": "05-04-2024",
-    "amount": 123000,
-    "account": "cash",
-    "counterparty": "Pak Agro Supplies",
-    "tag": "supplier"
+    "_id": "662fb7b3e7a6c5e001a1a014",
+    "transactionNumber": "114",
+    "amount": 180000,
+    "type": "income",
+    "description": "Website development project",
+    "userId": "201",
+    "purposeOfTransaction": "Web Development",
+    "issueDate": "2025-04-14T10:00:00Z",
+    "updatedAt": "2025-04-14T10:00:00Z",
+    "senderDetails": {
+      "name": "ChatGPT AI",
+      "accountNumber": "AI20250514",
+      "email": "assistant@openai.com",
+      "bankName": "FutureTech Bank",
+      "address": "1 AI Plaza"
+    },
+    "receiverDetails": {
+      "name": "NextGen Solutions",
+      "accountNumber": "3344556677",
+      "email": "projects@nextgensolutions.com",
+      "bankName": "UBL",
+      "address": "123, Lahore"
+    }
   }
 ]

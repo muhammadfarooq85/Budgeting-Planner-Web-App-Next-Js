@@ -1,0 +1,167 @@
+[
+  {
+    "_id": "6a2b3c4d5e6f7g8h9i0j1k2q",
+    "invoiceNumber": "017",
+    "issueDate": "2025-04-17T08:00:00Z",
+    "updatedAt": "2025-04-17T09:00:00Z",
+    "dueDate": "2025-05-01T00:00:00Z",
+    "amount": 2000,
+    "status": "draft",
+    "description": "Invoice for complete mobile app development.",
+    "purposeOfInvoice": "Payment for Mobile App Development.",
+    "senderDetails": {
+      "name": "ChatGPT AI",
+      "email": "assistant@openai.com",
+      "bankName": "FutureTech Bank",
+      "accountNumber": "AI00110011",
+      "address": "1 AI Plaza, Cloud City"
+    },
+    "receiverDetails": {
+      "name": "Digital Creators",
+      "email": "hello@digitalcreators.com",
+      "bankName": "Barclays",
+      "accountNumber": "DC99887766",
+      "address": "77 Pixel Ave, LA"
+    },
+    "items": [
+      {
+        "name": "Mobile App Development",
+        "description": "Cross-platform app",
+        "quantity": 2,
+        "pricePerUnit": 1000
+      }
+    ]
+  },
+  {
+    "_id": "7a2b3c4d5e6f7g8h9i0j1k2r",
+    "invoiceNumber": "018",
+    "issueDate": "2025-04-18T08:00:00Z",
+    "updatedAt": "2025-04-18T09:00:00Z",
+    "dueDate": "2025-05-02T00:00:00Z",
+    "amount": 1000,
+    "status": "paid",
+    "description": "Invoice for 2-month SEO contract.",
+    "purposeOfInvoice": "Payment for SEO Services.",
+    "senderDetails": {
+      "name": "Rachel Green",
+      "email": "rachel.green@fashionhub.com",
+      "bankName": "Wells Fargo",
+      "accountNumber": "RG44556677",
+      "address": "22 Fashion St, NY"
+    },
+    "receiverDetails": {
+      "name": "Tech Innovators",
+      "email": "info@techinnovators.com",
+      "bankName": "Chase",
+      "accountNumber": "TI88776655",
+      "address": "88 Tech Valley, NY"
+    },
+    "items": [
+      {
+        "name": "SEO Services",
+        "description": "Monthly SEO optimization",
+        "quantity": 5,
+        "pricePerUnit": 200
+      }
+    ]
+  },
+  {
+    "_id": "8a2b3c4d5e6f7g8h9i0j1k2s",
+    "invoiceNumber": "019",
+    "issueDate": "2025-04-19T08:00:00Z",
+    "updatedAt": "2025-04-19T09:00:00Z",
+    "dueDate": "2025-05-03T00:00:00Z",
+    "amount": 1500,
+    "status": "pending",
+    "description": "Invoice for 3 months social media management.",
+    "purposeOfInvoice": "Payment for Social Media Management.",
+    "senderDetails": {
+      "name": "Joey Tribbiani",
+      "email": "joey.tribbiani@actingworld.com",
+      "bankName": "HSBC",
+      "accountNumber": "JT66778899",
+      "address": "33 Hollywood Blvd, LA"
+    },
+    "receiverDetails": {
+      "name": "Marketing Experts",
+      "email": "team@marketingexperts.com",
+      "bankName": "Bank of America",
+      "accountNumber": "ME33221100",
+      "address": "55 Market St, SF"
+    },
+    "items": [
+      {
+        "name": "Social Media Management",
+        "description": "Handling 3 platforms",
+        "quantity": 5,
+        "pricePerUnit": 300
+      }
+    ]
+  },
+  {
+    "_id": "9a2b3c4d5e6f7g8h9i0j1k2t",
+    "invoiceNumber": "020",
+    "issueDate": "2025-04-20T08:00:00Z",
+    "updatedAt": "2025-04-20T09:00:00Z",
+    "dueDate": "2025-05-04T00:00:00Z",
+    "amount": 1000,
+    "status": "paid",
+    "description": "Invoice for user interface revamp.",
+    "purposeOfInvoice": "Payment for UI/UX Design.",
+    "senderDetails": {
+      "name": "Chandler Bing",
+      "email": "chandler.bing@adsales.com",
+      "bankName": "Citi",
+      "accountNumber": "CB99887766",
+      "address": "11 Madison Ave, NY"
+    },
+    "receiverDetails": {
+      "name": "Digital Creators",
+      "email": "hello@digitalcreators.com",
+      "bankName": "Barclays",
+      "accountNumber": "DC22113344",
+      "address": "77 Pixel Ave, LA"
+    },
+    "items": [
+      {
+        "name": "UI/UX Design",
+        "description": "User interface and experience design",
+        "quantity": 2,
+        "pricePerUnit": 500
+      }
+    ]
+  },
+  {
+    "_id": "10a2b3c4d5e6f7g8h9i0j1k2u",
+    "invoiceNumber": "021",
+    "issueDate": "2025-04-21T08:00:00Z",
+    "updatedAt": "2025-04-21T09:00:00Z",
+    "dueDate": "2025-05-05T00:00:00Z",
+    "amount": 800,
+    "status": "draft",
+    "description": "Invoice for logo and branding kit.",
+    "purposeOfInvoice": "Payment for Design Services.",
+    "senderDetails": {
+      "name": "ChatGPT AI",
+      "email": "assistant@openai.com",
+      "bankName": "FutureTech Bank",
+      "accountNumber": "AI22334455",
+      "address": "1 AI Plaza, Cloud City"
+    },
+    "receiverDetails": {
+      "name": "Creative Studios",
+      "email": "info@creativestudios.com",
+      "bankName": "Barclays",
+      "accountNumber": "BARC99887766",
+      "address": "500 Art St, London"
+    },
+    "items": [
+      {
+        "name": "Branding Kit",
+        "description": "Logo, color palette, and typography guide",
+        "quantity": 1,
+        "pricePerUnit": 800
+      }
+    ]
+  }
+]
