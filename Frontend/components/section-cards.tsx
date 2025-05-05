@@ -20,7 +20,7 @@ export default function DashboardCards() {
             <p className="text-xl font-bold">$34.109</p>
           </div>
           <div className="flex justify-between !w-full">
-            <p className="text-xl font-normal">Bank</p>
+            <p className="text-xl font-normal">Vault</p>
             <p className="text-xl font-bold">$10.320</p>
           </div>
           <div className="flex justify-between !w-full">
@@ -38,25 +38,21 @@ export default function DashboardCards() {
         <CardFooter className="flex-col gap-4 !w-full">
           <div className="flex justify-between !w-full">
             <p className="text-xl font-normal">14/11/23</p>
-            <p className="text-xl text-green-600">+$23.826</p>
             <p className="text-xl">Al Falah</p>
             <Badge>Subscription</Badge>
           </div>
           <div className="flex justify-between !w-full">
             <p className="text-xl font-normal">14/11/23</p>
-            <p className="text-xl text-red-600">-$23.826</p>
             <p className="text-xl">Al Fateh Foundation</p>
             <Badge>Charity</Badge>
           </div>
           <div className="flex justify-between !w-full">
-            <p className="text-xl font-normal">14/11/23</p>
-            <p className="text-xl text-green-600">+$23.826</p>
+            <p className="text-xl font-normal">14/11/25</p>
             <p className="text-xl">Masama Foundation</p>
             <Badge>Subscription</Badge>
           </div>
           <div className="flex justify-between !w-full">
             <p className="text-xl font-normal">14/11/23</p>
-            <p className="text-xl text-red-600">-$23.826</p>
             <p className="text-xl">Moazam Foundation</p>
             <Badge>Supplier</Badge>
           </div>

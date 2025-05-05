@@ -1,12 +1,14 @@
 "use client";
+// Libraries Imports
 import {
-  Building2,
   Calendar,
   ClipboardMinus,
   DollarSign,
   LayoutDashboard,
   ReceiptText,
+  ShieldUser,
 } from "lucide-react";
+// Local Imports
 import { NavMain } from "@/components/nav-main";
 import {
   Sidebar,
@@ -45,7 +47,7 @@ const data = {
     {
       title: "Users",
       url: "/dashboard/users",
-      icon: Building2,
+      icon: ShieldUser,
     },
   ],
 };

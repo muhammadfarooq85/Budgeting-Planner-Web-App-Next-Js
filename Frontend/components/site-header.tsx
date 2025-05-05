@@ -1,6 +1,5 @@
 "use client";
-import { Separator } from "@/components/ui/separator";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+// Libraries Imports
 import {
   CircleHelp,
   CircleUserRound,
@@ -8,6 +7,9 @@ import {
   LogOut,
   Settings,
 } from "lucide-react";
+// Local Imports
+import { Separator } from "@/components/ui/separator";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export function SiteHeader() {
   return (
@@ -23,9 +25,9 @@ export function SiteHeader() {
           <h2 className="text-xl sm:text-2xl font-medium">FinPlanner</h2>
         </div>
         <div className="ml-auto flex items-center gap-4">
+          <CircleHelp className="cursor-pointer" />
           <Settings className="cursor-pointer" />
           <CircleUserRound className="cursor-pointer" />
-          <CircleHelp className="cursor-pointer" />
           <LogOut className="cursor-pointer" />
         </div>
       </div>
