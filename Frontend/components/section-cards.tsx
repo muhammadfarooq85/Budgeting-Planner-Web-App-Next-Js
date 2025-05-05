@@ -1,7 +1,9 @@
+// Libraries Imports
 import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "./ui/badge";
+// Local Imports
+import { Badge } from "@/components/ui/badge";
 
-export function SectionCards() {
+export default function DashboardCards() {
   return (
     <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:shadow-xs lg:px-6 xl:grid-cols-2">
       <Card className="@container/card !bg-[#fbfcf7]">

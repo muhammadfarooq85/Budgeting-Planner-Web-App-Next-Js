@@ -34,7 +34,7 @@ const data = {
     },
     {
       title: "Reports",
-      url: "#",
+      url: "/dashboard/reports",
       icon: ClipboardMinus,
     },
     {

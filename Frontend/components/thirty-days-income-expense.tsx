@@ -111,15 +111,15 @@ const chartData = [
 
 const chartConfig = {
   views: {
-    label: "Account Statemnet",
+    label: "Total",
   },
   income: {
     label: "income",
-    color: "hsl(var(--chart-1))",
+    color: "#a8be90",
   },
   expense: {
     label: "expense",
-    color: "hsl(var(--chart-2))",
+    color: "#636c59",
   },
 } satisfies ChartConfig;
 
