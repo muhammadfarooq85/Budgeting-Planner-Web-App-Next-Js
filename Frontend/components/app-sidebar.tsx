@@ -43,8 +43,8 @@ const data = {
       icon: Calendar,
     },
     {
-      title: "Company And Users",
-      url: "#",
+      title: "Users",
+      url: "/dashboard/users",
       icon: Building2,
     },
   ],
